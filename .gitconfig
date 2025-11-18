@@ -1,0 +1,17 @@
+[alias]
+    s = status
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    tr = log --graph --oneline --decorate --color
+    trp = log --pretty='%C(yellow)%h %C(cyan)%cd %Cblue%aN%C(auto)%d %Creset%s' --graph --date=relative --date-order
+    wip = "!sh -c 'git add -A . && git status && git commit -m \"@wip [ci skip] $1\" --no-verify' -"
+    rh = "!sh -c 'git reset --hard origin/$1' -"
+    rs = "!sh -c 'git reset --soft HEAD~$1' -"
+    ri = rebase --interactive
+    rih = "!sh -c 'git ri HEAD~$1' -"
+[user]
+    name = Jorge Cardozo
+    email = jcardozoparedes@santandertecnologia.com.ar
+[credential "https://git-codecommit.us-east-1.amazonaws.com"]
+	provider = generic
