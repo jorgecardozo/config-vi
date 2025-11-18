@@ -1,0 +1,120 @@
+layout {
+default_tab_template {
+pane size=1 borderless=true {
+plugin location=“zellij:tab-bar”
+}
+children
+pane size=1 borderless=true {
+plugin location=“zellij:status-bar”
+}
+}
+
+tab name=“autogestivo” {
+pane split_direction=“vertical” {
+pane {
+command “nvim”
+cwd “/home/jcardozo/development/autogestivo-o2o-front”
+}
+
+
+  pane split_direction="horizontal" {
+    pane {
+      cwd "/home/jcardozo/development/autogestivo-o2o-front"
+    }
+    pane {
+      command "npm"
+      args "run" "dev"
+      cwd "/home/jcardozo/development/autogestivo-o2o-front"
+    }
+  }
+}
+
+
+}
+
+tab name=“lupita-frontend” {
+pane split_direction=“vertical” {
+pane {
+command “nvim”
+cwd “/home/jcardozo/development/lupita-frontend”
+}
+
+
+  pane split_direction="horizontal" {
+    pane {
+      cwd "/home/jcardozo/development/lupita-frontend"
+    }
+    pane {
+      command "npm"
+      args "run" "dev"
+      cwd "/home/jcardozo/development/lupita-frontend"
+    }
+  }
+}
+
+
+}
+
+tab name=“biome-omega” {
+pane split_direction=“vertical” {
+pane {
+command “nvim”
+cwd “/home/jcardozo/development/biome-omega-frontend”
+}
+
+  pane split_direction="horizontal" {
+    pane {
+      cwd "/home/jcardozo/development/biome-omega-frontend"
+    }
+    pane {
+      command "npm"
+      args "run" "dev"
+      cwd "/home/jcardozo/development/biome-omega-frontend"
+    }
+  }
+}
+
+}
+
+tab name=“kaizen-frontend” {
+pane split_direction=“vertical” {
+pane {
+command “nvim”
+cwd “/home/jcardozo/development/kaizen-frontend”
+}
+
+  pane split_direction="horizontal" {
+    pane {
+      cwd "/home/jcardozo/development/kaizen-frontend"
+    }
+    pane {
+      command "npm"
+      args "run" "dev"
+      cwd "/home/jcardozo/development/kaizen-frontend"
+    }
+  }
+}
+
+}
+
+tab name=“lupita-unifiedlogin” {
+pane split_direction=“vertical” {
+pane {
+command “nvim”
+cwd “/home/jcardozo/development/lupita-unifiedlogin-frontend”
+}
+
+  pane split_direction="horizontal" {
+    pane {
+      cwd "/home/jcardozo/development/lupita-unifiedlogin-frontend"
+    }
+    pane {
+      command "npm"
+      args "run" "dev"
+      cwd "/home/jcardozo/development/lupita-unifiedlogin-frontend"
+    }
+  }
+}
+
+}
+}

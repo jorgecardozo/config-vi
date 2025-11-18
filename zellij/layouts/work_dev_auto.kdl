@@ -1,0 +1,144 @@
+layout {
+default_tab_template {
+pane size=1 borderless=true {
+plugin location="zellij:tab-bar"
+}
+children
+pane size=1 borderless=true {
+plugin location="zellij:status-bar"
+}
+}
+
+
+
+tab name="autogestivo-c2c-front" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/autogestivo-c2c-front/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/autogestivo-c2c-front/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/autogestivo-c2c-front/"
+    }
+  }
+}
+
+}
+
+
+
+tab name="biome-omega-frontend" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/biome-omega-frontend/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/biome-omega-frontend/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/biome-omega-frontend/"
+    }
+  }
+}
+
+}
+
+
+
+tab name="kaizen-frontend" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/kaizen-frontend/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/kaizen-frontend/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/kaizen-frontend/"
+    }
+  }
+}
+
+}
+
+
+
+tab name="lupita-frontend" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/lupita-frontend/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/lupita-frontend/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/lupita-frontend/"
+    }
+  }
+}
+
+}
+
+
+
+tab name="lupita-unifiedlogin-frontend" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/lupita-unifiedlogin-frontend/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/lupita-unifiedlogin-frontend/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/lupita-unifiedlogin-frontend/"
+    }
+  }
+}
+
+}
+
+
+
+tab name="tdt-frontend" {
+pane split_direction="vertical" {
+pane name="CODE" {
+command "nvim"
+cwd "/home/jcardozo/development/tdt-frontend/"
+}
+
+
+  pane split_direction="horizontal" {
+    pane name="GIT" {
+      cwd "/home/jcardozo/development/tdt-frontend/"
+    }
+    pane name="SERVER" {
+      cwd "/home/jcardozo/development/tdt-frontend/"
+    }
+  }
+}
+
+}
+
+}
